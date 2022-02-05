@@ -1,39 +1,75 @@
 accounts:
   - name: alice
-    coins: ["100000000uatom", "100000000000000000000aevmos"]
+    coins: ["100000000000000000000000000dbs"]
   - name: bob
-    coins: ["5000000000000aevmos"]
+    coins: ["5000000000000000000000000dbs"]
+  - name: bob2
+    coins: ["5000000000000000000000000dbs"]
+  - name: bob3
+    coins: ["5000000000000000000000000dbs"]
+  - name: bob4
+    coins: ["5000000000000000000000000dbs"]
+  - name: bob5
+    coins: ["5000000000000000000000000dbs"]
+  - name: bob6
+    coins: ["5000000000000000000000000dbs"]
+  - name: bob7
+    coins: ["5000000000000000000000000dbs"]
+  - name: bob8
+    coins: ["5000000000000000000000000dbs"]
+  - name: bob9
+    coins: ["5000000000000000000000000dbs"]
 validator:
   name: alice
-  staked: "100000000000000000000aevmos"
+  staked: "100000000000000000dbs"
+  name: bob
+  staked: "100000000000000000dbs"
+  name: bob1
+  staked: "100000000000000000dbs"
+  name: bob2
+  staked: "100000000000000000dbs"
+  name: bob3
+  staked: "100000000000000000dbs"
+  name: bob4
+  staked: "100000000000000000dbs"
+  name: bob5
+  staked: "100000000000000000dbs"
+  name: bob6
+  staked: "100000000000000000dbs"
+  name: bob7
+  staked: "100000000000000000dbs"
+  name: bob8
+  staked: "100000000000000000dbs"
+  name: bob9
+  staked: "100000000000000000dbs"
 faucet:
   name: bob 
-  coins: ["10aevmos"]
+  coins: ["10000000000000dbs"]
 build:
-  binary: "evmosd"
+  binary: "dbsd"
 init:
-  home: "$HOME/.evmosd"
+  home: "$HOME/.dbsd"
   app:
     evm-rpc:
       address: "0.0.0.0:8545"     # change the JSON-RPC address and port
       ws-address: "0.0.0.0:8546"  # change the JSON-RPC websocket address and port
 genesis:
-  chain_id: "evmosd_9000-1"
+  chain_id: "dbsd_3222-1"
   app_state:
     staking:
       params:
-        bond_denom: "aevmos"
+        bond_denom: "dbs"
     mint:
       params:
-        mint_denom: "aevmos"
+        mint_denom: "dbs"
     crisis:
       constant_fee:
-        denom: "aevmos"
+        denom: "dbs"
     gov:
       deposit_params:
         min_deposit:
-          - amount: "10000000"
-            denom: "aevmos"
+          - amount: "10000000000"
+            denom: "dbs"
     evm:
       params:
-        evm_denom: "aevmos"
+        evm_denom: "dbs"
