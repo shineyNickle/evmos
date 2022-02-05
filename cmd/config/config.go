@@ -26,7 +26,7 @@ const (
 
 const (
 	// DisplayDenom defines the denomination displayed to users in client applications.
-	DisplayDenom = "dbs"
+	DisplayDenom = "dbsx"
 	// BaseDenom defines to the default denomination used in Evmos (staking, EVN, governance, etc)
 	BaseDenom = "dbs"
 )
